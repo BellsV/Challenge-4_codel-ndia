@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { VisibilityService } from './visibility.service'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(public visibilityService: VisibilityService){}
+
+
+   @HostListener('window:resize', ['$event'])
+   onResize(event : Event):void{
+    const showGraficPart = window.innerWidth>=900;
+    this.visibilityService.setShowGraficPart(showGraficPart)
+   }
+
   title = 'desafio_4';
 }

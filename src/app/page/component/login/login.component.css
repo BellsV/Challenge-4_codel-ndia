@@ -1,0 +1,169 @@
+.container_login{
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__content_login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__content_login>h4{
+  color: #1A202C;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container__content_login>h1{
+  color: #1A202C;
+  font-family: Merriweather;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 5px 0 30px ;
+}
+.container__content_login > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__content_login > form > label {
+  color: #1a202cbb;
+
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container__content_login > form > input {
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
+  margin: 5px 0;
+
+  height: 35px;
+}
+
+
+
+.form-parteBaixo{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 20px
+
+}
+
+.checkbox-container>span{
+  color: #1A202C;
+
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 5px ;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 10px;
+  height: 10px;
+  background: #3b3a3a;
+
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.hidden-checkbox:checked + .custom-checkbox::before {
+  opacity: 1;
+  background-color: #04c35d85;
+}
+
+.form_parteBaixo__link> a{
+  text-decoration: none;
+  color: #2B6CB0;
+
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logIn{
+  color: white;
+  background: #04C35C;
+  border: #04C35C;
+  border-radius: 5px;
+
+  height: 40px;
+  margin-bottom: 10px;
+
+  font-family: Lato, "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logInWithGoogle{
+  color: white;
+  background: #1A202C;
+  border: #1A202C;
+  border-radius: 5px;
+
+  height: 40px;
+  margin-bottom: 10px;
+
+  font-family: Lato, "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logInWithGoogle>img{
+  margin-right: 5px;
+}
+
+.cadastro{
+  color: #1A202C;
+
+  font-family: Lato, "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cadastro> span > a{
+  color: #2B6CB0;
+  text-decoration: none;
+}
+
+#email, #password, ::-webkit-input-placeholder {
+  padding-left: 15px;
+}
+
+.logIn:hover{
+  background: #04c393;
+  border: 2px solid #04C35C;
+  cursor: pointer;
+}
+
+.logInWithGoogle:hover{
+  background: #2b6bb0c0;
+  border: 2px solid #1A202C;
+  cursor: pointer;
+}

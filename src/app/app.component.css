@@ -1,0 +1,10 @@
+.side-by-side{
+  display: flex;
+}
+
+.expanded .loginPart{
+  width: auto;
+}
+
+
+
